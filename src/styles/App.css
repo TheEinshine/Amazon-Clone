@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    color: white;
+    margin-left: 10px;
+}
+nav{
+    display: flex;  
+    background-color: #232f3f;
+    height: 70px;
+    width: 100%; 
+}
+
+#amazon-logo{
+  height: 2.5rem;
+  padding-top: 15px;
+ 
+}
+
+#location{
+    height: 15px;
+}
+
+
+#cart{
+    height: 2vh;
+    zoom: 120%;
+}
+
+#list{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+#form-wrapper {
+    width: 50%;
+    height: 40px;
+  }
+  
+  .nav-list {
+    padding: 10.7px 25px 10px 5px;
+    position: relative;
+    float: left;
+    border: 1px solid orange;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  
+  #dropdown {
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 1px solid orange;
+  }
+  
+  #dropdown:hover {
+    background-color: lightgray;
+  }
+  
+  .current-selection {
+    display: inline-block;
+    font-size: 14px;
+  }
+  
+  .in-wrap {
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  #search-box {
+  
+    width: 100%;
+    height: 100%;
+    border: 1px solid orange;
+    border-left: none;
+    border-right: none;
+    line-height: 25px;
+    font-size: 18px;
+    padding-left: 650px;
+  }
+  
+  #search-box:focus {
+    outline: none;
+  }

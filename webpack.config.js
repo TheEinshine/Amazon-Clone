@@ -6,6 +6,7 @@ module.exports = {
     output: {
         path: path.join(__dirname, "/dist"),
         filename: "index_bundle.js",
+        publicPath: '/'
     },
     module: {
         rules: [
@@ -42,6 +43,9 @@ module.exports = {
             template: "./src/index.html"
         })
     ],
+    devServer: {
+    historyApiFallback: true,
+  },
     resolve: {
         extensions: ['.js', '.jsx'],
     }
