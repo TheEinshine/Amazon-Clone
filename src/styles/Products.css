@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.product {
+  background-color: rgb(255, 255, 255);
+  width: 400px;
+  height: 500px;
+  margin: 1.5rem;
+  object-fit: cover;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #8b0f0f8c;
+  white-space: normal;
+  /* overflow: scroll; */
+  text-overflow: clip;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.product div:nth-of-type(1) {
+
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  color: #f9d3b4;
+}
+
+#itemImg {
+  padding: 1%;
+  height: 300px;
+  /* border: 1px solid black; */
+  object-fit: cover;
+}
+
+.product:hover {
+  box-shadow: 0px 30px 18px -8px rgba(186, 13, 13, 0.1);
+  transform: scale(1.05, 1.05);
+}
+
+.product div:nth-of-type(2) {
+
+  width: 100%;
+  height: 100%;
+}
+
+.product div:nth-of-type(2) img {
+  height: 100%;
+  width: 100%;
+}
+
+.product div:nth-of-type(3) {
+
+  z-index: 2;
+  background-color: #293035;
+  padding: 16px 24px 24px 24px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.product div:nth-of-type(3) span {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #f0f0f0;
+
+
+}
+
+.product div:nth-of-type(3) h3 {
+  margin-top: 5px;
+  font-family: "Roboto Slab", serif;
+  color: #f9d3b4;
+}
+
+.product:hover div:nth-of-type(2) {
+  height: 100%;
+  
+}
+
+.product:hover div:nth-of-type(3) {
+  background-color: #ff4400;
+}
+
+.product:hover div:nth-of-type(1) {
+  opacity: 1;
+}
+
+.container {
+  width: 100%;
+  margin-top: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#form-wrapper {
+  width: 50%;
+  height: 40px;
+}
+
+.nav-list {
+  padding: 10.7px 25px 10px 5px;
+  position: relative;
+  float: left;
+  border: 1px solid orange;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+#dropdown {
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: 1px solid orange;
+}
+
+#dropdown:hover {
+  background-color: lightgray;
+}
+
+.current-selection {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.in-wrap {
+  overflow: hidden;
+  height: 100%;
+}
+
+#search-box {
+
+  width: 100%;
+  height: 100%;
+  border: 1px solid orange;
+  border-left: none;
+  border-right: none;
+  line-height: 25px;
+  font-size: 18px;
+  padding-left: 650px;
+}
+
+#search-box:focus {
+  outline: none;
+}
+
+.go-button {
+  float: right;
+  height: 100%;
+  background-color: orange;
+  border: 1px solid orange;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin: 0;
+  padding: 0 15px;
+}
+
+.go-button:hover {
+  background-color: #ff7300;
+  cursor: pointer;
+}
+
+
+/* 
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg, rgba(255, 141, 177, 0.842) 3%, rgba(58, 207, 209, 0.766) 38%, rgba(201, 208, 170, 0.771) 68%, rgba(239, 86, 86, 0.804) 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+} */
+
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
